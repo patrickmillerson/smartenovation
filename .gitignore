@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Django
+*.log
+*.pot
+*.pyc
+*.mo
+*.db
+*.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static/
+
+# Environment variables
+.env
+*.env
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+*.venv
+
+# VS Code
+.vscode/
+.settings/
+
+# PyCharm
+.idea/
+
+# Mac / Linux / Windows system files
+.DS_Store
+Thumbs.db
+
+# Coverage and testing
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Migrations (optional — if you want to ignore them during development)
+# */migrations/
+# !*/migrations/__init__.py
+
+# Docker related
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# Docker volumes (adjust these if you use different names in docker-compose.yml)
+postgres-data/
+redis-data/
+pgdata/
+data/
+db-data/
+
+# Node (if you have React/JS frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
