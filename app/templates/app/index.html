@@ -1,0 +1,349 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartEnovation — Build Smarter</title>
+
+  <!-- Bootstrap + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="{% static 'app/css/style.css' %}" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold tracking" href="#">SmartEnovation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-outline-light rounded-pill px-3">
+              <i class="bi bi-moon-stars"></i> <span class="d-none d-sm-inline">Dark</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero position-relative text-center">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="container d-flex flex-column align-items-center justify-content-center h-100">
+      <h1 class="display-3 fw-extrabold animate-fade">
+        We build <span class="gradient-text typing" data-words='["SaaS","Mobile Apps","APIs","Automation","Experiences"]'>SaaS</span>
+      </h1>
+      <p class="lead mt-3 mb-4 opacity-90">From idea to production — robust, scalable, beautifully crafted software.</p>
+      <div class="d-flex gap-3 flex-wrap justify-content-center">
+        <a href="#services" class="btn btn-gradient btn-lg shadow-lg">Explore Services</a>
+        <a href="#contact" class="btn btn-outline-light btn-lg rounded-pill">Get a Quote</a>
+      </div>
+
+      <div class="trust-strip glass mt-5 px-4 py-3 rounded-4">
+        <span class="me-3 opacity-75">Trusted for:</span>
+        <i class="bi bi-shield-check me-3"></i>
+        <i class="bi bi-lightning-charge me-3"></i>
+        <i class="bi bi-cloud-arrow-up me-3"></i>
+        <i class="bi bi-phone"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- STATS -->
+  <section class="py-5 bg-surface">
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-6 col-md-3">
+          <div class="stat-card glass">
+            <div class="h2 fw-bold counter" data-target="99">0</div>
+            <div class="small opacity-75">Deploys / year</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card glass">
+            <div class="h2 fw-bold counter" data-target="12">0</div>
+            <div class="small opacity-75">Active projects</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card glass">
+            <div class="h2 fw-bold counter" data-target="3">0</div>
+            <div class="small opacity-75">Published apps</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="stat-card glass">
+            <div class="h2 fw-bold counter" data-target="100">0</div>
+            <div class="small opacity-75">% commitment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Services</h2>
+      <p class="text-muted mb-5">Speed to MVP. Scale to millions. Maintain with confidence.</p>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card glass-card h-100 p-3">
+            <div class="card-body">
+              <i class="bi bi-cloud-arrow-up fs-1 text-gradient"></i>
+              <h5 class="mt-3 fw-bold">SaaS Development</h5>
+              <p>Full-stack apps (Django/DRF + React/React Native) with payments, auth, and analytics.</p>
+              <ul class="list-unstyled small opacity-85">
+                <li>• Auth & Billing</li>
+                <li>• DevOps & Docker</li>
+                <li>• Observability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card glass-card h-100 p-3">
+            <div class="card-body">
+              <i class="bi bi-phone fs-1 text-gradient"></i>
+              <h5 class="mt-3 fw-bold">Mobile Apps</h5>
+              <p>Expo/React Native apps for Android & iOS with smooth UI, ads, and in-app purchases.</p>
+              <ul class="list-unstyled small opacity-85">
+                <li>• Store Launch</li>
+                <li>• Analytics & Ads</li>
+                <li>• OTA Updates</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card glass-card h-100 p-3">
+            <div class="card-body">
+              <i class="bi bi-cpu fs-1 text-gradient"></i>
+              <h5 class="mt-3 fw-bold">Automation & APIs</h5>
+              <p>Integrations, webhooks, and background jobs that save time and money.</p>
+              <ul class="list-unstyled small opacity-85">
+                <li>• REST & Webhooks</li>
+                <li>• Celery & Schedulers</li>
+                <li>• Third-party APIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Featured Projects</h2>
+        <p class="opacity-75">A few things we’re proud of.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="project-card p-4 glass-dark h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="fw-bold mb-0">Ramming</h5>
+              <span class="badge bg-gradient rounded-pill">SaaS</span>
+            </div>
+            <p class="mb-3 opacity-85">Estimate creation platform for contractors with PDF export & automation.</p>
+            <div class="d-flex gap-2 flex-wrap small">
+              <span class="tech">Django</span><span class="tech">React</span><span class="tech">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="project-card p-4 glass-dark h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="fw-bold mb-0">LingoSpin</h5>
+              <span class="badge bg-gradient rounded-pill">Mobile</span>
+            </div>
+            <p class="mb-3 opacity-85">Word game app with ads & rewards, optimized for engagement and retention.</p>
+            <div class="d-flex gap-2 flex-wrap small">
+              <span class="tech">React-Native</span><span class="tech">Expo</span><span class="tech">AdMob</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#contact" class="btn btn-gradient btn-lg shadow-lg">Start Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-5 bg-surface">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">What Clients Say</h2>
+      </div>
+
+      <div id="tCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner rounded-4 glass overflow-hidden">
+          <div class="carousel-item active p-5">
+            <figure class="mb-0">
+              <blockquote class="blockquote fs-5">
+                “Fast, reliable, and sharp execution. Our internal process went from manual to automatic.”
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                Nick — Veneratio
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item p-5">
+            <figure class="mb-0">
+              <blockquote class="blockquote fs-5">
+                “They delivered our MVP in weeks, with clean code and a clear roadmap.”
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                Patrick Orij — Project Owner
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-item p-5">
+            <figure class="mb-0">
+              <blockquote class="blockquote fs-5">
+                “Professional from day one. Excellent communication and results.”
+              </blockquote>
+              <figcaption class="blockquote-footer mb-0">
+                Cyril — Homeowner
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#tCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">Let’s build something smart</h2>
+          <p class="text-muted mb-4">Tell us about your project. We’ll reply with a plan and timeline.</p>
+          <div class="d-flex gap-3">
+            <a href="mailto:info@smartenovation.com" class="btn btn-gradient btn-lg">Email Us</a>
+            <a href="tel:+5999XXXXXXX" class="btn btn-outline-dark btn-lg rounded-pill"><i class="bi bi-telephone me-2"></i>Call</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="glass p-4 rounded-4">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control form-control-lg" placeholder="Your name" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" placeholder="you@example.com" />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control form-control-lg" rows="4" placeholder="What do you want to build?"></textarea>
+              </div>
+              <div class="col-12 d-grid">
+                <button type="button" class="btn btn-gradient btn-lg">Send Message</button>
+              </div>
+              <p class="small text-muted mb-0 mt-2">This demo form is static — wire it to your backend/Django later.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <div class="container small opacity-85">
+      © <span id="year"></span> SmartEnovation • Crafted with ❤️ in Curaçao
+      <div class="mt-2">
+        <a class="text-white me-3" href="#"><i class="bi bi-github"></i></a>
+        <a class="text-white me-3" href="#"><i class="bi bi-linkedin"></i></a>
+        <a class="text-white" href="#"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle + persistence
+    const btn = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('smartTheme');
+    if (saved) document.documentElement.setAttribute('data-theme', saved);
+    function setToggleIcon() {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      btn.innerHTML = current === 'dark'
+        ? '<i class="bi bi-sun"></i> <span class="d-none d-sm-inline">Light</span>'
+        : '<i class="bi bi-moon-stars"></i> <span class="d-none d-sm-inline">Dark</span>';
+    }
+    setToggleIcon();
+    btn.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme') || 'light';
+      const next = current === 'light' ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('smartTheme', next);
+      setToggleIcon();
+    });
+
+    // Typing words
+    const typingEl = document.querySelector('.typing');
+    if (typingEl) {
+      const words = JSON.parse(typingEl.getAttribute('data-words') || '[]');
+      let i = 0;
+      setInterval(() => {
+        typingEl.textContent = words[i % words.length];
+        i++;
+      }, 1400);
+    }
+
+    // Counters on view
+    const counters = document.querySelectorAll('.counter');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = +el.dataset.target;
+        let cur = 0;
+        const step = Math.max(1, Math.floor(target / 60));
+        const iv = setInterval(() => {
+          cur += step;
+          if (cur >= target) { cur = target; clearInterval(iv); }
+          el.textContent = cur;
+        }, 16);
+        observer.unobserve(el);
+      });
+    }, { threshold: 0.6 });
+    counters.forEach(c => observer.observe(c));
+  </script>
+</body>
+</html>
