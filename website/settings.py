@@ -16,7 +16,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*','smartenovation.smartenovation.org']
 
-# Test App
+#  Message
 # Application definition
 
 INSTALLED_APPS = [
