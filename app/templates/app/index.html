@@ -12,6 +12,17 @@
 
   <link rel="stylesheet" href="{% static 'app/css/style.css' %}" />
 </head>
+<style>
+  /* Optional: makes the whole card feel clickable */
+.project-link .project-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.project-link:hover .project-card {
+  transform: translateY(-3px);
+}
+
+</style>
 <body>
   <!-- NAV -->
   <nav class="navbar navbar-expand-lg navbar-dark glass-nav fixed-top">
@@ -149,46 +160,108 @@
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="py-5 bg-dark text-white">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="fw-bold">Featured Projects</h2>
-        <p class="opacity-75">A few things we’re proud of.</p>
-      </div>
+<section id="projects" class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Featured Projects</h2>
+      <p class="opacity-75">A few things we’re proud of.</p>
+    </div>
 
-      <div class="row g-4">
-        <div class="col-md-6">
+    <div class="row g-4">
+      <!-- Ramming -->
+      <div class="col-md-6">
+        <a
+          href="https://raming.smartenovation.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link d-block h-100 text-decoration-none text-white"
+        >
           <div class="project-card p-4 glass-dark h-100">
             <div class="d-flex align-items-center justify-content-between mb-2">
               <h5 class="fw-bold mb-0">Ramming</h5>
               <span class="badge bg-gradient rounded-pill">SaaS</span>
             </div>
-            <p class="mb-3 opacity-85">Estimate creation platform for contractors with PDF export & automation.</p>
+
+            <p class="mb-3 opacity-85">
+              Estimate creation platform for contractors with PDF export & automation.
+            </p>
+
             <div class="d-flex gap-2 flex-wrap small">
               <span class="tech">Django</span><span class="tech">React</span><span class="tech">Docker</span>
             </div>
-          </div>
-        </div>
 
-        <div class="col-md-6">
+            <div class="mt-3 small opacity-75">
+              Visit site →
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- LingoSpin -->
+      <div class="col-md-6">
+        <a
+          href="https://lingospin.smartenovation.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link d-block h-100 text-decoration-none text-white"
+        >
           <div class="project-card p-4 glass-dark h-100">
             <div class="d-flex align-items-center justify-content-between mb-2">
               <h5 class="fw-bold mb-0">LingoSpin</h5>
               <span class="badge bg-gradient rounded-pill">Mobile</span>
             </div>
-            <p class="mb-3 opacity-85">Word game app with ads & rewards, optimized for engagement and retention.</p>
+
+            <p class="mb-3 opacity-85">
+              Word game app with ads & rewards, optimized for engagement and retention.
+            </p>
+
             <div class="d-flex gap-2 flex-wrap small">
               <span class="tech">React-Native</span><span class="tech">Expo</span><span class="tech">AdMob</span>
             </div>
+
+            <div class="mt-3 small opacity-75">
+              Visit site →
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
-      <div class="text-center mt-4">
-        <a href="#contact" class="btn btn-gradient btn-lg shadow-lg">Start Your Project</a>
+      <!-- Suavemanta -->
+      <div class="col-md-6">
+        <a
+          href="https://suavemanta.smartenovation.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link d-block h-100 text-decoration-none text-white"
+        >
+          <div class="project-card p-4 glass-dark h-100">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h5 class="fw-bold mb-0">Suavemanta</h5>
+              <span class="badge bg-gradient rounded-pill">Website</span>
+            </div>
+
+            <p class="mb-3 opacity-85">
+              Website for a massage therapy clinic offering muscle therapy and relaxation services.
+            </p>
+
+            <div class="d-flex gap-2 flex-wrap small">
+              <span class="tech">Django</span><span class="tech">Linux Server</span><span class="tech">Deployment</span>
+            </div>
+
+            <div class="mt-3 small opacity-75">
+              Visit site →
+            </div>
+          </div>
+        </a>
       </div>
     </div>
-  </section>
+
+    <div class="text-center mt-4">
+      <a href="#contact" class="btn btn-gradient btn-lg shadow-lg">Start Your Project</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- TESTIMONIALS -->
   <section id="testimonials" class="py-5 bg-surface">
